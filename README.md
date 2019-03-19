@@ -8,11 +8,15 @@ In order to build the container locally, the files from this repository need to 
 Additonally, the following file (SSET from Fieldportal) need to be put into the same directory:
 sset4_3_linux_64.tar.gz
 
+Docker need to be installed on the local machine: https://www.docker.com/get-started
+
+
 To build the container the following command need to be invoked from the same directory:
 ```
 docker build -t [tag] .
 e.g.
 docker build -t cschnidr/sset .
+```
 
 To run the container use the following command. By using -v any local directory will be mapped into the container to the /mnt mountpoint.
 ```
