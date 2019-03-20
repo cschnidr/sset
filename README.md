@@ -36,6 +36,5 @@ Formula to calculate the space savings in percentage from the ratio is as follow
 Space Reduction Percentage = 1 – (1 / Space Reduction Ratio)
 e.g.
 2.9:1 = 1-(1/2.9) = 0.655 = 65.5%
-
 ```
 Source: https://www.snia.org/sites/default/files/Understanding_Data_Deduplication_Ratios-20080718.pdf
