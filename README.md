@@ -25,7 +25,7 @@ e.g.
 docker run -it -v /Users/cschnidr/Documents/:/mnt cschnidr/sset
 ```
 
-To change the behaviour of the SSET (e.g. switch to secondary compression with 32K CG) use the following commands:
+To change the behaviour of the SSET (e.g. to switch to secondary compression with 32K CG) use the following commands:
 ```
 $ docker run -it -v /Users/cschnidr/Documents/:/mnt cschnidr/sset bash
 root@17fe0be4a57d:/# cd /sset/sset4_3_linux_64/
