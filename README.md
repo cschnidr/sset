@@ -18,9 +18,16 @@ e.g.
 docker build -t cschnidr/sset .
 ```
 
-To run the container use the following command. By using -v any local directory will be mapped into the container to the /mnt mountpoint. The SSET tool (binary version) will automatically be run with default options (dedupe, compression and compaction on) on the Folder mapped to /mnt.
+To run the container use the following command. By using -v any local directory will be mapped into the container to the /mnt mountpoint. The SSET tool (binary version) will automatically be run with default options (dedupe, adaptive compression and compaction on) on the Folder mapped to /mnt.
 ```
 docker run -it -v [any local sir with subdirs]:/mnt cschnidr/sset
 e.g.
 docker run -it -v /Users/cschnidr/Documents/:/mnt cschnidr/sset
 ```
+
+To change the behaviour of the SSET (e.g. switch to secondary compression with 32K CG) use the following commands:
+```
+$ docker run -it -v /Users/cschnidr/Documents/:/mnt cschnidr/sset bash
+root@17fe0be4a57d:/# cd /sset/sset4_3_linux_64/
+root@17fe0be4a57d:/sset/sset4_3_linux_64# ./find_space -p /mnt -f tmp -g 8
+
