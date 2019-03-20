@@ -31,3 +31,10 @@ $ docker run -it -v /Users/cschnidr/Documents/:/mnt cschnidr/sset bash
 root@17fe0be4a57d:/# cd /sset/sset4_3_linux_64/
 root@17fe0be4a57d:/sset/sset4_3_linux_64# ./find_space -p /mnt -f tmp -g 8
 
+Formula to calculate the space savings in percentage from the ratio is as following:
+```
+Space Reduction Percentage = 1 – (1 / Space Reduction Ratio)
+e.g.
+2.9:1 = 1-(1/2.9) = 0.655 = 65.5%
+```
+Source: https://www.snia.org/sites/default/files/Understanding_Data_Deduplication_Ratios-20080718.pdf
